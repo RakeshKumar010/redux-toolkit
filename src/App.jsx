@@ -1,21 +1,18 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { setName } from './app/messSlice'
-import Heading from './components/Heading'
-
+import Comp1 from './components/comp1'
+import Comp2 from './components/comp2'
+import Comp3 from './components/comp3'
+import Comp4 from './components/comp4'
 
 
 const App = () => {
-  // const print = useSelector((state) => state.message.value)
-  const dispatch = useDispatch()
   return (
-    <div>
-      <h1>Hello </h1>
-      <Heading/>
-      <button onClick={()=>{
-         dispatch(setName('Rakesh'));
-      }}>print</button>
-    </div>
+    <>
+     <Comp1/>
+     <Comp2/>
+     <Comp3/>
+     <Comp4/>
+    </>
   )
 }
 
